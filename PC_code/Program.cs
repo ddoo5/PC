@@ -14,3 +14,5 @@ _sign.AddRange("-'^*~@/!#$%&");
 
 List<char> _numbers = new List<char>();
 _numbers.AddRange("1234567890");
+
+Random rnd = new();
