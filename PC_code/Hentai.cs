@@ -3,46 +3,7 @@ namespace PC_code
 {
 	internal sealed class Hentai
 	{
-		public static void PictureOne()
-        {
-			Console.WriteLine("⠄⠄⢰⣧⣼⣯⠄⣸⣠⣶⣶⣦⣾⠄⠄⠄⠄⡀⠄⢀⣿⣿⠄⠄⠄⢸⡇⠄⠄");
-			Console.WriteLine("⠄⠄⠄⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄");
-			Console.WriteLine("⠄⠄⢀⡋⣡⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿⠄");
-			Console.WriteLine("⠄⠄⢸⣇⠻⣿⣿⣿⣧⣀⢀⣠⡌⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⣿⣿⣿⠄");
-			Console.WriteLine("⠄⢀⢸⣿⣷⣤⣤⣤⣬⣙⣛⢿⣿⣿⣿⣿⣿⣿⡿⣿⣿⡍⠄⠄⢀⣤⣄⠉⠋⣰");
-			Console.WriteLine("⠄⣼⣖⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⢇⣿⣿⡷⠶⠶⢿⣿⣿⠇⢀⣤");
-			Console.WriteLine("⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣷⣶⣥⣴⣿⡗");
-			Console.WriteLine("⢀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄");
-			Console.WriteLine("⢸⣿⣦⣌⣛⣻⣿⣿⣧⠙⠛⠛⡭⠅⠒⠦⠭⣭⡻⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄");
-			Console.WriteLine("⠘⣿⣿⣿⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠹⠈⢋⣽⣿⣿⣿⣿⣵⣾⠃⠄");
-
-			Console.Write("⠄⠘⣿⣿⣿⣿⣿⣿⣿⣿");
-			Console.ForegroundColor = ConsoleColor.Red;
-			Console.Write("⠄⣴⣿⣶⣄⠄⣴⣶⠄");
-			Console.ResetColor();
-			Console.Write("⢀⣾⣿⣿⣿⣿⣿⣿⠃⠄⠄\n");
-
-			Console.Write("⠄⠄⠈⠻⣿⣿⣿⣿⣿⣿");
-			Console.ForegroundColor = ConsoleColor.Red;
-			Console.Write("⡄⢻⣿⣿⣿⠄⣿⣿⡀");
-			Console.ResetColor();
-			Console.Write("⣾⣿⣿⣿⣿⣛⠛⠁⠄⠄⠄\n");
-
-			Console.Write("⠄⠄⠄⠄⠈⠛⢿⣿⣿⣿");
-			Console.ForegroundColor = ConsoleColor.Red;
-			Console.Write("⠁⠞⢿⣿⣿⡄⢿⣿⡇");
-			Console.ResetColor();
-			Console.Write("⣸⣿⣿⠿⠛⠁⠄⠄⠄⠄⠄\n");
-
-			Console.Write("⠄⠄⠄⠄⠄⠄⠄⠉⠻⣿⣿⣾⣦");
-			Console.ForegroundColor = ConsoleColor.Red;
-			Console.Write("⡙⠻⣷⣾⣿⠃");
-			Console.ResetColor();
-			Console.Write("⠿⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄\n");
-			Console.WriteLine("⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⡙⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄");
-		}
-
-		public static void PictureTwo()
+		public static void Picture()
         {
 			Console.WriteLine("⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⡤⠞⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⢤⣀⠀⠀⠀⠱⣄⠳⢤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
 			Console.WriteLine("⠀⠀⠀⠀⠀⠀⢀⠔⢋⡵⠻⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣷⣄⠀⠀⠘⣆⠀⠈⠉⠓⢤⡀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
