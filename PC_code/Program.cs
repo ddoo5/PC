@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using PC_code;
 
-Draw();
+Hentai.PictureTwo();
 
 List<char> _lowlet = new List<char>();
 _lowlet.AddRange("abcdefghijklmnopqrstuvwxyz");
@@ -14,10 +14,3 @@ _sign.AddRange("-'^*~@/!#$%&");
 
 List<char> _numbers = new List<char>();
 _numbers.AddRange("1234567890");
-
-void Draw()
-{
-    //Console.SetWindowSize(1000, 1000);
-    Hentai.PictureOne();
-    Hentai.PictureTwo();
-}
