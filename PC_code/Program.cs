@@ -20,47 +20,50 @@ int x;
 Hentai.Picture(); //вывод картинки
 
 
-try   //основной метод
+while (true)
 {
-    Console.WriteLine("Выберите нужный вид пароля, написав цифру\n" +
-    "1) обычный пароль(6 символов)\n" +
-    "2) пароль с использованием цифр(8 символов)\n" +
-    "3) пароль с использованием спец.символов(8 символов)\n" +
-    "4) сложный пароль(16 символов)");
-
-    int typen = Convert.ToInt32(Console.ReadLine());
-    string password;
-
-    switch (typen)
+    try   //основной метод
     {
-        case 1:
-            password = Creator(1, 6);
-            Console.WriteLine(password);
-            break;
-        case 2:
-            password = Creator(2, 8);
-            Console.WriteLine(password);
-            break;
-        case 3:
-            password = Creator(3, 8);
-            Console.WriteLine(password);
-            break;
-        case 4:
-            password = Creator(3, 16);
-            Console.WriteLine(password);
-            break;
-        default:
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Введите нужную цифру");
-            break;
+        Console.WriteLine("Выберите нужный вид пароля, написав цифру\n" +
+        "1) обычный пароль(6 символов)\n" +
+        "2) пароль с использованием цифр(8 символов)\n" +
+        "3) пароль с использованием спец.символов(8 символов)\n" +
+        "4) сложный пароль(16 символов)");
+
+        int typen = Convert.ToInt32(Console.ReadLine());
+        string password;
+
+        switch (typen)
+        {
+            case 1:
+                password = Creator(1, 6);
+                Console.WriteLine(password);
+                break;
+            case 2:
+                password = Creator(2, 8);
+                Console.WriteLine(password);
+                break;
+            case 3:
+                password = Creator(3, 8);
+                Console.WriteLine(password);
+                break;
+            case 4:
+                password = Creator(3, 16);
+                Console.WriteLine(password);
+                break;
+            default:
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Введите нужную цифру");
+                break;
 
 
+        }
     }
-}
-catch (Exception ex)
-{
-    Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine($"Exception: {ex.Message}");
+    catch (Exception ex)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine($"Exception: {ex.Message}");
+    }
 }
 
 
