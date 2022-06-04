@@ -37,32 +37,40 @@ while (true)
         {
             case 1:
                 password = Creator(1, 6);
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(password);
+                Console.ResetColor();
                 break;
             case 2:
                 password = Creator(2, 8);
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(password);
+                Console.ResetColor();
                 break;
             case 3:
                 password = Creator(3, 8);
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(password);
+                Console.ResetColor();
                 break;
             case 4:
                 password = Creator(3, 16);
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(password);
+                Console.ResetColor();
                 break;
             default:
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Введите нужную цифру");
+                Console.ResetColor();
                 break;
-
-
         }
     }
     catch (Exception ex)
     {
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine($"Exception: {ex.Message}");
+        Console.ResetColor();
     }
 }
 
