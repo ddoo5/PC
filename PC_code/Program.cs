@@ -83,6 +83,7 @@ while (true)   //основной метод
     }
 }
 
+
 string Creator(int n, int y)  //Метод, который создает пароль, в зависимости от нужного типа
 {
     string password = "";
@@ -128,6 +129,7 @@ char RandomLowlet() // Метод для выбора рандомной стр�
 {
     x = rnd.Next(0, _lowlet.Count);
     char c = _lowlet[x];
+
     return c;
 }
 
@@ -136,6 +138,7 @@ char RandomCaplet()  // Метод для выбора рандомной про
 {
     x = rnd.Next(0, _caplet.Count);
     char c = _caplet[x];
+
     return c;
 }
 
@@ -144,6 +147,7 @@ char RandomSign()  //Метод для выбора рандомного зна�
 {
     x = rnd.Next(0, _sign.Count);
     char c = _sign[x];
+
     return c;
 }
 
@@ -152,6 +156,7 @@ char RandomNumber()  //Метод для выбора рандомной циф�
 {
     x = rnd.Next(0, _numbers.Count);
     char c = _numbers[x];
+
     return c;
 }
 
