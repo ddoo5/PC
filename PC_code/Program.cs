@@ -18,17 +18,22 @@ int x;
 
 
 Hentai.Picture(); //вывод картинки
-
+Console.WriteLine("\n \n");
+Console.ForegroundColor = ConsoleColor.Red;
+Console.WriteLine("Если пароль похож на следующий: Kxxxxxw ,то лучше его заменить");
+Console.ResetColor();
+Console.WriteLine("\n \n");
 
 while (true)   //основной метод
 {
     try
     {
-        Console.WriteLine("Выберите нужный вид пароля, написав цифру\n" +
+        Console.WriteLine("Выберите нужный вид пароля, введя предложенную из цифр:\n" +
         "1) обычный пароль(6 символов)\n" +
         "2) пароль с использованием цифр(8 символов)\n" +
-        "3) пароль с использованием спец.символов(8 символов)\n" +
-        "4) сложный пароль(16 символов)");
+        "3) пароль с использованием символов(8 символов)\n" +
+        "4) сложный пароль(16 символов)\n" +
+        "5) случайный пароль(до 30 символов)");
 
         int typen = Convert.ToInt32(Console.ReadLine());
         string password;
@@ -59,10 +64,14 @@ while (true)   //основной метод
                 Console.WriteLine(password);
                 Console.ResetColor();
                 break;
-            default:
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Введите нужную цифру");
+            case 5:
+                password = Creator(5, 0);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine(password);
                 Console.ResetColor();
+                break;
+            default:
+                throw new Exception("Enter exsiting number");
                 break;
         }
     }
@@ -74,61 +83,10 @@ while (true)   //основной метод
     }
 }
 
-
-char RandomLowlet() // Метод для выбора рандомной строчной буквы
-{
-    x = rnd.Next(0, _lowlet.Count);
-    char c = _lowlet[x];
-    return c;
-}
-
-char RandomCaplet()  // Метод для выбора рандомной прописной буквы
-{
-    x = rnd.Next(0, _caplet.Count);
-    char c = _caplet[x];
-    return c;
-}
-
-char RandomSign()  //Метод для выбора рандомного знака
-{
-    x = rnd.Next(0, _sign.Count);
-    char c = _sign[x];
-    return c;
-}
-
-char RandomNumber()  //Метод для выбора рандомной цифры
-{
-    x = rnd.Next(0, _numbers.Count);
-    char c = _numbers[x];
-    return c;
-}
-
-char Randomizer(int q)  //Метод, который рандомно выбирает тип символа для пароля
-{
-    char letter = 'o';
-    int r = rnd.Next(q + 1);
-
-    switch (r)
-    {
-        case 0:
-            return letter = RandomLowlet();
-            break;
-        case 1:
-            return letter = RandomCaplet();
-            break;
-        case 2:
-            return letter = RandomNumber();
-            break;
-        case 3:
-            return letter = RandomSign();
-            break;
-    }
-    return letter;
-}
-
 string Creator(int n, int y)  //Метод, который создает пароль, в зависимости от нужного типа
 {
     string password = "";
+    int _randomLenght = rnd.Next(6, 30);
 
     if (n == 1)
     {
@@ -146,13 +104,96 @@ string Creator(int n, int y)  //Метод, который создает пар
             password += f;
         }
     }
-    else
+    else if (n == 3)
     {
         for (int i = 0; i < y; i++)
+        {
+            char f = Randomizer(4);
+            password += f;
+        }
+    }
+    else if (n == 5)
+    {
+        for (int i = 0; i < _randomLenght; i++)
         {
             char f = Randomizer(3);
             password += f;
         }
     }
     return password;
+}
+
+
+char RandomLowlet() // Метод для выбора рандомной строчной буквы
+{
+    x = rnd.Next(0, _lowlet.Count);
+    char c = _lowlet[x];
+    return c;
+}
+
+
+char RandomCaplet()  // Метод для выбора рандомной прописной буквы
+{
+    x = rnd.Next(0, _caplet.Count);
+    char c = _caplet[x];
+    return c;
+}
+
+
+char RandomSign()  //Метод для выбора рандомного знака
+{
+    x = rnd.Next(0, _sign.Count);
+    char c = _sign[x];
+    return c;
+}
+
+
+char RandomNumber()  //Метод для выбора рандомной цифры
+{
+    x = rnd.Next(0, _numbers.Count);
+    char c = _numbers[x];
+    return c;
+}
+
+
+char Randomizer(int q)  //Метод, который рандомно выбирает тип символа для пароля
+{
+    char letter = 'x';
+    int r = rnd.Next(0, q );
+
+    if(q == 4)
+    {
+        r = rnd.Next(0, q - 1);
+        switch (r)
+        {
+            case 0:
+                letter = RandomLowlet();
+                break;
+            case 1:
+                letter = RandomCaplet();
+                break;
+            case 2:
+                letter = RandomSign();
+                break;
+        }
+    }
+    else
+    {
+        switch (r)
+        {
+            case 0:
+                letter = RandomLowlet();
+                break;
+            case 1:
+                letter = RandomCaplet();
+                break;
+            case 2:
+                letter = RandomNumber();
+                break;
+            case 3:
+                letter = RandomSign();
+                break;
+        }
+    }
+    return letter;
 }
