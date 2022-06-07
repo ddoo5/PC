@@ -75,35 +75,35 @@ while (true)   //основной метод
 }
 
 
-char lowlet() // Метод для выбора рандомной строчной буквы
+char RandomLowlet() // Метод для выбора рандомной строчной буквы
 {
     x = rnd.Next(0, _lowlet.Count);
     char c = _lowlet[x];
     return c;
 }
 
-char caplet()  // Метод для выбора рандомной прописной буквы
+char RandomCaplet()  // Метод для выбора рандомной прописной буквы
 {
     x = rnd.Next(0, _caplet.Count);
     char c = _caplet[x];
     return c;
 }
 
-char signs()  //Метод для выбора рандомного знака
+char RandomSign()  //Метод для выбора рандомного знака
 {
     x = rnd.Next(0, _sign.Count);
     char c = _sign[x];
     return c;
 }
 
-char numbers()  //Метод для выбора рандомной цифры
+char RandomNumber()  //Метод для выбора рандомной цифры
 {
     x = rnd.Next(0, _numbers.Count);
     char c = _numbers[x];
     return c;
 }
 
-char swt(int q)  //Метод, который рандомно выбирает тип символа для пароля
+char Randomizer(int q)  //Метод, который рандомно выбирает тип символа для пароля
 {
     char letter = 'o';
     int r = rnd.Next(q + 1);
@@ -111,16 +111,16 @@ char swt(int q)  //Метод, который рандомно выбирает 
     switch (r)
     {
         case 0:
-            return letter = lowlet();
+            return letter = RandomLowlet();
             break;
         case 1:
-            return letter = caplet();
+            return letter = RandomCaplet();
             break;
         case 2:
-            return letter = numbers();
+            return letter = RandomNumber();
             break;
         case 3:
-            return letter = signs();
+            return letter = RandomSign();
             break;
     }
     return letter;
@@ -134,7 +134,7 @@ string Creator(int n, int y)  //Метод, который создает пар
     {
         for (int i = 0; i < y; i++)
         {
-            char f = swt(1);
+            char f = Randomizer(1);
             password += f;
         }
     }
@@ -142,7 +142,7 @@ string Creator(int n, int y)  //Метод, который создает пар
     {
         for (int i = 0; i < y; i++)
         {
-            char f = swt(2);
+            char f = Randomizer(2);
             password += f;
         }
     }
@@ -150,7 +150,7 @@ string Creator(int n, int y)  //Метод, который создает пар
     {
         for (int i = 0; i < y; i++)
         {
-            char f = swt(3);
+            char f = Randomizer(3);
             password += f;
         }
     }
