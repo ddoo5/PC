@@ -59,7 +59,7 @@ while (true)   //основной метод
                 Console.ResetColor();
                 break;
             case 4:
-                password = Creator(3, 16);
+                password = Creator(4, 16);
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine(password);
                 Console.ResetColor();
@@ -110,6 +110,14 @@ string Creator(int n, int y)  //Метод, который создает пар
         for (int i = 0; i < y; i++)
         {
             char f = Randomizer(4);
+            password += f;
+        }
+    }
+    else if (n == 4)
+    {
+        for (int i = 0; i < y; i++)
+        {
+            char f = Randomizer(3);
             password += f;
         }
     }
@@ -164,7 +172,7 @@ char RandomNumber()  //Метод для выбора рандомной циф�
 char Randomizer(int q)  //Метод, который рандомно выбирает тип символа для пароля
 {
     char letter = 'x';
-    int r = rnd.Next(0, q );
+    int r = rnd.Next(0, q + 1 );
 
     if(q == 4)
     {
