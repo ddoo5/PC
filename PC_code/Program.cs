@@ -43,31 +43,31 @@ while (true)   //основной метод
             case 1:
                 password = Creator(1, 6);
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(password);
+                Console.WriteLine("\n " + password + "\n");
                 Console.ResetColor();
                 break;
             case 2:
                 password = Creator(2, 8);
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(password);
+                Console.WriteLine("\n " + password + "\n");
                 Console.ResetColor();
                 break;
             case 3:
                 password = Creator(3, 8);
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(password);
+                Console.WriteLine("\n " + password + "\n");
                 Console.ResetColor();
                 break;
             case 4:
                 password = Creator(4, 16);
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(password);
+                Console.WriteLine("\n " + password + "\n");
                 Console.ResetColor();
                 break;
             case 5:
                 password = Creator(5, 0);
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine(password);
+                Console.WriteLine("\n " + password + "\n");
                 Console.ResetColor();
                 break;
             default:
