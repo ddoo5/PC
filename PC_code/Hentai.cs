@@ -1,4 +1,4 @@
-﻿namespace PC_code
+﻿namespace PC_code.Picture
 {
 	internal sealed class Hentai
 	{

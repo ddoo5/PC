@@ -1,4 +1,4 @@
-﻿using PC_code;
+﻿using PC_code.Picture;
 
 List<char> _lowlet = new List<char>();
 _lowlet.AddRange("abcdefghijklmnopqrstuvwxyz");
