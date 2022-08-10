@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using PC_code;
+﻿using PC_code;
 
 List<char> _lowlet = new List<char>();
 _lowlet.AddRange("abcdefghijklmnopqrstuvwxyz");

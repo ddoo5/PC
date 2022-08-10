@@ -1,5 +1,4 @@
-﻿using System;
-namespace PC_code
+﻿namespace PC_code
 {
 	internal sealed class Hentai
 	{
