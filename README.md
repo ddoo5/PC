@@ -15,7 +15,7 @@ If password is similar to Kxxxxxw, you should change it.
 
 
 # How to launch?
-You download project from [releases]( https://github.com/ddoo5/PC/releases), unpack it and launch Pc_code.exe.
+You download project from [releases]( https://github.com/ddoo5/PC/releases), unpack it and launch PC_code.
 
 ```For Windows```
 
