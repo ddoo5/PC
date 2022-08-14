@@ -1,3 +1,4 @@
+# How it works?
 ```Password creator``` keeps your security by generating complex passwords. It can generate five types of passwords:
 
 -	Ordinary password consists of 6 chars: uppercase and lowercase letters
