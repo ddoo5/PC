@@ -8,7 +8,7 @@ Password creator keeps your security by generating complex passwords. It can gen
 
 If password is similar to Kxxxxxw, you should change it.
 
-![]( https://github.com/ddoo5/PC/blob/documentation/photos/example2.png)
+![]( https://github.com/ddoo5/PC/blob/documentation/photos/example1.png)
 
 ![](https://github.com/ddoo5/PC/blob/documentation/photos/example2.png)
 
