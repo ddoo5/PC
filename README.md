@@ -1,4 +1,4 @@
-Password creator keeps your security by generating complex passwords. It can generate five types of passwords:
+```Password creator``` keeps your security by generating complex passwords. It can generate five types of passwords:
 
 -	Ordinary password consists of 6 chars: uppercase and lowercase letters
 -	Password with numbers consist of 8 chars: numbers and both types of letters
