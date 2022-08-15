@@ -15,7 +15,8 @@ _numbers.AddRange("1234567890");
 Random rnd = new();
 int x;
 
-
+Console.Title = "Password Creator";
+Console.ForegroundColor = ConsoleColor.White;
 Hentai.Picture(); //вывод картинки
 Console.WriteLine("\n \n");
 Console.ForegroundColor = ConsoleColor.Red;
