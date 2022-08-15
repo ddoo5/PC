@@ -1,4 +1,5 @@
 ﻿using PC_code.Picture;
+using System.Text;
 
 List<char> _lowlet = new List<char>();
 _lowlet.AddRange("abcdefghijklmnopqrstuvwxyz");
@@ -15,7 +16,7 @@ _numbers.AddRange("1234567890");
 Random rnd = new();
 int x;
 
-
+Console.OutputEncoding = Encoding.Unicode;
 Hentai.Picture(); //вывод картинки
 Console.WriteLine("\n \n");
 Console.ForegroundColor = ConsoleColor.Red;
