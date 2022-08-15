@@ -12,7 +12,7 @@ If password is similar to Kxxxxxw, you should change it.
 
 # Example
 
-<img src="https://github.com/ddoo5/PC/blob/documentation/photos/example1.png" width="480" height="690"><img src="https://github.com/ddoo5/PC/blob/documentation/photos/example2.png" width="530" height="710">
+<img src="https://github.com/ddoo5/PC/blob/documentation/photos/example1.png" width="450" height="660"><img src="https://github.com/ddoo5/PC/blob/documentation/photos/example2.png" width="500" height="680">
 
 
 # How to launch?
