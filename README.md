@@ -2,17 +2,18 @@
 
 ```Password creator``` keeps your security by generating complex passwords. It can generate five types of passwords:
 
--	Ordinary password consists of 6 chars: uppercase and lowercase letters
--	Password with numbers consist of 8 chars: numbers and both types of letters
--	Password with symbols consist of 8 chars: special symbols (-'^*~@/!#$%&) and both types of letters
--	Complex password consists of 16 chars: numbers, special symbols and both types of letters
--	Random password consists of 6-30 chars: numbers, special symbols and both types of letters
+-	Ordinary password consists of 6 **random** chars: uppercase and lowercase letters
+-	Password with numbers consist of 8 **random** chars: numbers and both types of letters
+-	Password with symbols consist of 8 **random** chars: special symbols (-'^*~@/!#$%&) and both types of letters
+-	Complex password consists of 16 **random** chars: numbers, special symbols and both types of letters
+-	Random password consists of 6-30 **random** chars: numbers, special symbols and both types of letters
 
 If password is similar to Kxxxxxw, you should change it.
 
-![]( https://github.com/ddoo5/PC/blob/documentation/photos/example1.png)
+# Example
 
-![](https://github.com/ddoo5/PC/blob/documentation/photos/example2.png)
+<img src="https://github.com/ddoo5/PC/blob/documentation/photos/example1.png" width="480" height="690"><img src="https://github.com/ddoo5/PC/blob/documentation/photos/example2.png" width="530" height="710">
+
 
 # How to launch?
 
